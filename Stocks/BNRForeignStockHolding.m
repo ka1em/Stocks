@@ -10,4 +10,21 @@
 
 @implementation BNRForeignStockHolding
 
+-(float)costInDollars
+{
+    return [super costInDollars] * self.conversionRate;
+}
+
+-(float)valueInDollars
+{
+    return [super valueInDollars] * self.conversionRate;
+}
+
+-(NSString *)description
+{
+    return [NSString stringWithFormat:@"num of shares %d Rate %.2f",
+            self.numberOfShares, self.conversionRate];
+}
+
+
 @end

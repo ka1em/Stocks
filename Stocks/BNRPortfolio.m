@@ -10,4 +10,19 @@
 
 @implementation BNRPortfolio
 
+- (void)addHoldings:(NSMutableArray *)a
+{
+    if (!_holdings) {
+        _holdings = [[NSMutableArray alloc]init];
+    }
+    [_holdings addObject:a];
+}
+- (float)totalValue
+{
+    float sum = 0.0;
+    for (id d in _holdings) {
+        sum += [d valueInDollars];
+    }
+    return sum;
+}
 @end

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRForeignStockHolding.h"
 
-@interface BNRPortfolio : NSObject
+@interface BNRPortfolio : BNRForeignStockHolding
 
+@property (nonatomic) NSMutableArray *holdings;
+- (void)addHoldings:(NSMutableArray *)a;
+- (float)totalValue;
 @end

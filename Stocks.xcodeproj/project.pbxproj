@@ -10,6 +10,9 @@
 		A4A531D41D3CF60400577962 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A531D31D3CF60400577962 /* Foundation.framework */; };
 		A4A531D71D3CF60400577962 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A531D61D3CF60400577962 /* main.m */; };
 		A4A531DB1D3CF60400577962 /* Stocks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4A531DA1D3CF60400577962 /* Stocks.1 */; };
+		A4A531E31D3CF62D00577962 /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A531E21D3CF62D00577962 /* BNRStockHolding.m */; };
+		A4A577681D3E0ABE005EE3F1 /* BNRForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A577671D3E0ABE005EE3F1 /* BNRForeignStockHolding.m */; };
+		A4ADB2981D3E3FD70047D3E6 /* BNRPortfolio.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ADB2971D3E3FD70047D3E6 /* BNRPortfolio.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		A4A531D61D3CF60400577962 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4A531D91D3CF60400577962 /* Stocks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stocks-Prefix.pch"; sourceTree = "<group>"; };
 		A4A531DA1D3CF60400577962 /* Stocks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Stocks.1; sourceTree = "<group>"; };
+		A4A531E11D3CF62D00577962 /* BNRStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStockHolding.h; sourceTree = "<group>"; };
+		A4A531E21D3CF62D00577962 /* BNRStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStockHolding.m; sourceTree = "<group>"; };
+		A4A577661D3E0ABE005EE3F1 /* BNRForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRForeignStockHolding.h; sourceTree = "<group>"; };
+		A4A577671D3E0ABE005EE3F1 /* BNRForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRForeignStockHolding.m; sourceTree = "<group>"; };
+		A4ADB2961D3E3FD70047D3E6 /* BNRPortfolio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRPortfolio.h; sourceTree = "<group>"; };
+		A4ADB2971D3E3FD70047D3E6 /* BNRPortfolio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRPortfolio.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,12 @@
 		A4A531D51D3CF60400577962 /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				A4A531E11D3CF62D00577962 /* BNRStockHolding.h */,
+				A4A531E21D3CF62D00577962 /* BNRStockHolding.m */,
+				A4A577661D3E0ABE005EE3F1 /* BNRForeignStockHolding.h */,
+				A4A577671D3E0ABE005EE3F1 /* BNRForeignStockHolding.m */,
+				A4ADB2961D3E3FD70047D3E6 /* BNRPortfolio.h */,
+				A4ADB2971D3E3FD70047D3E6 /* BNRPortfolio.m */,
 				A4A531D61D3CF60400577962 /* main.m */,
 				A4A531DA1D3CF60400577962 /* Stocks.1 */,
 				A4A531D81D3CF60400577962 /* Supporting Files */,
@@ -139,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A577681D3E0ABE005EE3F1 /* BNRForeignStockHolding.m in Sources */,
+				A4ADB2981D3E3FD70047D3E6 /* BNRPortfolio.m in Sources */,
 				A4A531D71D3CF60400577962 /* main.m in Sources */,
+				A4A531E31D3CF62D00577962 /* BNRStockHolding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +271,7 @@
 				A4A531E01D3CF60400577962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
